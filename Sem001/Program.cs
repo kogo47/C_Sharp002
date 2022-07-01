@@ -3,8 +3,48 @@
 // 12-> 2 
 // 85 -> 8
 
-int number = new Random().Next(10, 100);
-Console.Write(number);
+
+//проба генерирует рандомное число
+//пишим 100 чтобы 99 было в ключино в рандомное число
+// int number = new Random().Next(10, 100);
+// Console.Write(number);
 
 
 
+
+// //сейчас мы будем писать программу которая будет выводить большую и меньшую цифру
+
+// int number = new Random().Next(10, 100);
+// //Console.WriteLine(number);
+// int num1 = number / 10;//создаем переменную, что бы в нее сохранить- 
+// //значение первой цифорки нашего 2 значного числа
+// int num2 = number % 10;//получаем вторую из остатка деления
+
+// //"," ставить нельзя иначе считается ошибкой, если так,-
+// //то получается что мы пытаемся вывести несколько переменных через","-
+// //и что бы консоли вывести целиком все три значения, мы используем "+" и ""
+// //слияние 
+// Console.WriteLine(number + " " + num1 + " " + num2);//так все три чесла пролучаются раздельно 
+// //Console.WriteLine(number +  num1 +  num2);//так он считает сумму 3 чисел
+// if (num1 > num2){//если num1 будет больше num2
+//     Console.WriteLine(num1);// то тогда тогда выводим num1 
+// }
+// else//иначе, если num1 не больше num2 то тода-
+// {
+//    Console.WriteLine(num2);//выводим num2
+// }
+
+
+
+
+//модификация все арифметические выражения записываем-
+// Console.Write 
+int number = new Random().Next(10, 100);Console.WriteLine(number);
+Console.Write(number + "-> "); 
+if (number / 10 > number % 10){//если num1 будет больше num2
+    Console.WriteLine(number / 10);// то тогда тогда выводим num1 
+}
+else//иначе, если num1 не больше num2 то тода-
+{
+   Console.WriteLine(number % 10);//выводим num2
+}
